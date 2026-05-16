@@ -12,6 +12,10 @@
 ## Platform Overview
 **Garant-Fleet DSM** is a high-performance, real-time computer vision monitoring platform engineered for commercial transport infrastructure, industrial logistics, and enterprise fleets. Developed as a core intelligence pillar of the unified **Garant-Fleet AI** ecosystem by a single founder, this platform executes low-latency edge inference to mitigate heavy vehicle accident risks by instantly identifying driver drowsiness, micro-sleep events, distraction vectors, and cognitive fatigue patterns.
 
+## Global Platform Integration (Ecosystem Synergy)
+As the **Human Risk Detection Layer** of the Garant-Fleet AI ecosystem, this module continuously feeds behavioral risk coefficients to the central data layer. In the event of a verified micro-sleep anomaly, it instantly syncs with the `Garant-Fleet Fuel` tracker to correlate abrupt fuel drops (e.g., if the vehicle leaves the road or idling state changes) and sends a combined emergency payload to the fleet server.
+
+
 The platform wraps bare-metal mathematical logic into an enterprise-grade safety countermeasure, translating raw facial feature metrics into physical in-cabin intervention and real-time fleet telematics alarms.
 
 ---

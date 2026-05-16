@@ -1,8 +1,6 @@
 # Garant-Fleet DSM: Edge AI Driver Monitoring & Fatigue Detection Engine
 ### Part of the "Garant-Fleet AI" Integrated Intelligent Analytics Ecosystem
 
-![Garant-Fleet AI Banner](https://raw.githubusercontent.com/RuslanGarant/vehicle-faceid-immobilizer/main/assets/banner.png) *(Placeholder for Ecosystem Banner)*
-
 ## Platform Overview
 **Garant-Fleet DSM** is a high-performance, real-time computer vision monitoring system engineered for commercial transport infrastructure and enterprise fleets. Acting as a core intelligence node within the **Garant-Fleet AI** ecosystem developed by a single founder, this platform executes local, low-latency edge inference to mitigate heavy vehicle accident risks by instantly identifying driver drowsiness, micro-sleep events, and cognitive fatigue patterns.
 

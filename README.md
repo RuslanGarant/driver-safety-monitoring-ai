@@ -1,5 +1,5 @@
 ```mermaid
-AI-Powered Driver Fatigue & Drowsiness Detection Module
+#AI-Powered Driver Fatigue & Drowsiness Detection Module
 
 This repository contains an Edge AI software module designed for Driver Status Monitoring (DSM) systems. It detects commercial driver fatigue, micro-sleep, and prolonged eye closure in real-time to mitigate risks associated with drowsy driving in heavy-duty fleets.
 

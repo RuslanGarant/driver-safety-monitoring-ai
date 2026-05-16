@@ -1,27 +1,29 @@
-# Garant-Fleet DSM: Edge AI Driver Monitoring & Fatigue Detection Engine
+# Garant-Fleet DSM: Edge AI Driver Monitoring & Fatigue Detection Platform
 ### Part of the "Garant-Fleet AI" Integrated Intelligent Analytics Ecosystem
-
-## Platform Overview
-**Garant-Fleet DSM** is a high-performance, real-time computer vision monitoring system engineered for commercial transport infrastructure and enterprise fleets. Acting as a core intelligence node within the **Garant-Fleet AI** ecosystem developed by a single founder, this platform executes local, low-latency edge inference to mitigate heavy vehicle accident risks by instantly identifying driver drowsiness, micro-sleep events, and cognitive fatigue patterns.
 
 ---
 
-## Technical Positioning & Neural Pipeline
-Standard safety scripts rely on cloud computing and heavy processing. Garant-Fleet DSM is deployed as an independent **AI Engine**, operating entirely offline on embedded ARM-based mobile digital video recorders (MDVR) to eliminate data transfer latencies.
+**GARANT-FLEET AI PLATFORM** *Enterprise Infrastructure for Commercial Fleet Safety, Computer Vision Telematics & Driver Status Monitoring* `[ Framework: Garant-Fleet ID ]` • `[ Engine: Garant-Fleet DSM ]` • `[ System: Garant-Fleet Fuel ]`
 
-### Mathematical Framework & AI Data Pipeline
-The engine executes facial landmark localization to dynamically compute the **Eye Aspect Ratio (EAR)** using spatial vector geometry:
+---
+
+<div style="page-break-after: always; break-after: page;"></div>
+
+## Platform Overview
+**Garant-Fleet DSM** is a high-performance, real-time computer vision monitoring platform engineered for commercial transport infrastructure, industrial logistics, and enterprise fleets. Developed as a core intelligence pillar of the unified **Garant-Fleet AI** ecosystem by a single founder, this platform executes low-latency edge inference to mitigate heavy vehicle accident risks by instantly identifying driver drowsiness, micro-sleep events, distraction vectors, and cognitive fatigue patterns.
+
+The platform wraps bare-metal mathematical logic into an enterprise-grade safety countermeasure, translating raw facial feature metrics into physical in-cabin intervention and real-time fleet telematics alarms.
+
+---
+
+## 1. System Level Architecture
+The platform operates as a localized hardware-software loop, moving seamlessly from optical pixel ingestion to commercial telematics data synchronization.
 
 ```mermaid
-graph LR
-    A[NIR Camera Stream] --> B[Face Mesh Tracking Node]
-    B --> C[Facial Landmark Extraction]
-    C --> D[EAR Coordinate Calculation]
-    D --> E{EAR < Fatigue Threshold?}
-    E -->|No / Normal Blink| F[Reset Temporal Counter]
-    E -->|Yes / Eyes Closed| G[Initiate Consecutive Frame Counter]
-    G --> H{Duration >= 1.5 Seconds?}
-    H -->|No| A
-    H -->|Yes / Micro-Sleep| I[Trigger In-Cabin Audio Intervention]
-    I --> J[Package Cryptographic Metadata Event]
-    J --> K[Telematics Sync to Fleet Cloud via MQTT]
+graph TD
+    A[Near-Infrared Camera Input] -->|High-FPS Video Stream| B[Face Mesh & Landmark Locator]
+    B -->|Spatial Point Extraction| C[Mathematical Vector Analyzer / EAR]
+    C -->|Continuous Metric Tracking| D[Temporal Counter & Anomaly Filter]
+    D -->|Fatigue Verification Layer| E[In-Cabin Decision Engine]
+    E -->|GPIO Low-Latency Signal| F[Audio Buzzer / Safety Hardware]
+    E -->|Secure MQTT JSON Payload| G[Fleet Management Cloud Server]
